@@ -484,6 +484,13 @@ progress {
   font-weight:800;
   text-shadow:2px 2px 5px #e1bb00
 }
+.mask-container{
+  width: 66%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
 @media(min-width:992px)
 {
   .section-masks{
@@ -510,6 +517,14 @@ progress {
 .section-cta{
   padding-top: 100px;
   padding-bottom: 20px;
+}
+
+.cta-container{
+  width: 66%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .cta{
