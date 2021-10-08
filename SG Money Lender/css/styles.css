@@ -3484,6 +3484,14 @@ textarea.form-control-lg {
   list-style: none;
 }
 
+.footer-nav-link{
+  display: block;
+  --bs-text-opacity: 1;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -5282,6 +5290,15 @@ textarea.form-control-lg {
     border-radius: 0;
   }
 }
+
+.footer-container{
+  width: 70%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .tooltip {
   position: absolute;
   z-index: 1080;
