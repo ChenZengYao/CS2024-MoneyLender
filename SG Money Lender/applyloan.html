@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content />
         <meta name="author" content />
-        <title>Modern Business - Start Bootstrap Template</title>
+        <title>Apply for a Loan - SG Money Lender</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -25,10 +25,12 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="applyloan.html">Apply Loan</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+                          <li class="nav-item"><a class="nav-link active" href="applyloan.html">Apply Loan</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#footer">About Us</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#footer">Contact Us</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -36,49 +38,58 @@
             <!-- Page content-->
             <section class="py-5">
                 <div class="container px-5">
-                    <!-- Contact form-->
                     <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
                         <div class="text-center mb-5">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-currency-dollar"></i></div>
-                            <h1 class="fw-bolder">Apply for a Loan</h1>
+                            <h1 class="display-5 fw-bolder mb-3">Apply for a Loan</h1>
                             <p class="lead fw-normal text-muted mb-0">Please kindly provide us with your details so that we can process your loan application online.
                             <br>We will contact you back shortly to arrange for an appointment. </p>
                         </div>
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8 col-xl-6">
-                                <!-- * * * * * * * * * * * * * * *-->
-                                <!-- * * SB Forms Contact Form * *-->
-                                <!-- * * * * * * * * * * * * * * *-->
-                                <!-- This form is pre-integrated with SB Forms.-->
-                                <!-- To make this form functional, sign up at-->
-                                <!-- https://startbootstrap.com/solution/contact-forms-->
-                                <!-- to get an API token!-->
-                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <form id="contactForm">
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                        <label for="name">Full name</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                                    </div>
-                                    <!-- Email address input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                        <label for="email">Email address</label>
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name">
+                                        <label for="name">Full Name</label>
                                     </div>
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                        <label for="phone">Phone number</label>
-                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                        <input class="form-control" id="phone" type="tel" placeholder="Enter your contact number">
+                                        <label for="phone">Contact No.</label>
+                                    </div>
+                                    <!-- Amount required input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="loanamount" type="number" placeholder="Enter the loan amount">
+                                        <label for="loanamount">Your Amount Required</label>
+                                    </div>
+                                    <!-- Monthly income input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="monthlyincome" type="number" placeholder="Enter your monthly income">
+                                        <label for="monthlyincome">Your Monthly Income</label>
+                                    </div>
+                                    <!-- Loan Type input-->
+                                    <div class="form-floating mb-3">
+                                        <select class="form-control" id="loantype">
+                                          <option hidden>Select Loan Type</option>
+                                          <option>Personal Loan</option>
+                                          <option>Business Loan</option>
+                                          <option>Foreigner Loan</option>
+                                          <option>Education Loan</option>
+                                          <option>Medical Loan</option>
+                                          <option>Wedding Loan</option>
+                                          <option>Vacation Loan</option>
+                                          <option>Renovation Loan</option>
+                                        </select>
                                     </div>
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                        <label for="message">Message</label>
-                                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                        <textarea class="form-control" id="message" type="text" placeholder="Enter additional message here" style="height: 10rem"></textarea>
+                                        <label for="message">Enter additional message here (optional)</label>
                                     </div>
+                                    <!-- Privacy statement-->
+                                    <small id="emailHelp" class="form-text text-muted">Your Privacy and Security, Protected. We take full measures to protect your identity.
+                                      By submitting this form, you agree to be contacted with the information stated above. Your application is 100% confidential.</small><br><br>
                                     <!-- Submit success message-->
                                     <div class="d-none" id="submitSuccessMessage">
                                         <div class="text-center mb-3">
@@ -103,12 +114,12 @@
                         <div class="col">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-chat-dots"></i></div>
                             <div class="h5 mb-2">Chat with us</div>
-                            <p class="text-muted mb-0">Chat live with one of our support specialists.</p>
+                            <p class="text-muted mb-0">Feel free to email us if you have any questions.</p>
                         </div>
                         <div class="col">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-people"></i></div>
                             <div class="h5">Ask the community</div>
-                            <p class="text-muted mb-0">Explore our community forums and communicate with other users.</p>
+                            <p class="text-muted mb-0">Feel free to check the reviews on community forums for our reliability.</p>
                         </div>
                         <div class="col">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-question-circle"></i></div>
@@ -118,7 +129,7 @@
                         <div class="col">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-telephone"></i></div>
                             <div class="h5">Call us</div>
-                            <p class="text-muted mb-0">Call us during normal business hours at (555) 892-9403.</p>
+                            <p class="text-muted mb-0">Call us during normal business hours at 6898 7874.</p>
                         </div>
                     </div>
                 </div>
@@ -126,40 +137,42 @@
         </main>
         <!-- Footer-->
         <footer class="bg-dark py-4 mt-auto" id="footer">
-            <div class="footer-container">
-              <div class="container-fluid text-center text-md-left px-5">
-                <div class="row">
-                  <div class="col-md-6 mt-md-0 mt-3 text-white">
-                    <h5 class="text-uppercase">About Us</h5><br>
-                    <div class="text-white-50">
-                      <p>Founded in 2015, SG Money Lender focus on building trust and reliablity among customers</p>
-                    </div>
+          <div class="footer-container">
+            <div class="container-fluid text-center text-md-left px-5">
+              <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3 text-white">
+                  <h5 class="text-uppercase">About Us</h5><br>
+                  <div class="text-white-50">
+                    <p>Founded in 2015, SG Money Lender is committed on building a <br> trustable and reliable relationship with all our customers. Licensed<br>
+                      and highly recognised in Singapore, we ensure that we provide the <br> LOWEST interest rate among all our competitors. With us, your needs <br>
+                      will always come first.</p>
                   </div>
-                  <hr class="clearfix w-100 d-md-none pb-3">
-                  <div class="col-md-3 mb-md-0 mb-3 text-white">
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Quick Links</h5><br>
-                    <ul class="list-unstyled">
-                      <li class="nav-item"><a class="footer-nav-link" href="index.html">Home</a></li>
-                      <li class="nav-item"><a class="footer-nav-link" href="services.html">Our Services</a></li>
-                      <li class="nav-item"><a class="footer-nav-link" href="applyloan.html">Apply Now</a></li>
-                      <li class="nav-item"><a class="footer-nav-link" href="#">FAQ</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-3 mb-md-0 mb-3 text-white">
-                    <h5 class="text-uppercase">Have a Question ?</h5><br>
-                    <div class="text-white-50">
-                        <p>8.30am - 6.00pm (Last entry at 5.00pm)</p>
-                        <p>80 Mandai Lake Road Singapore 729826</p>
-                        <p>Contact Number: 98987874</p>
-                        <p>Email: sgmoneylender@money.com</p> 
-                    </div>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3 text-white">
+                  <!-- Links -->
+                  <h5 class="text-uppercase">Quick Links</h5><br>
+                  <ul class="list-unstyled">
+                    <li class="nav-item"><a class="footer-nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="footer-nav-link" href="services.html">Our Services</a></li>
+                    <li class="nav-item"><a class="footer-nav-link" href="applyloan.html">Apply Now</a></li>
+                    <li class="nav-item"><a class="footer-nav-link" href="#">FAQ</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 mb-3 text-white">
+                  <h5 class="text-uppercase">Have a Question ?</h5><br>
+                  <div class="text-white-50">
+                    <p>Tel: 6898 7874</p>
+                    <p>Email: sgmoneylender@money.com</p>
+                    <p>Opening Hours: 8.30am - 6.00pm </p>
+                    <p>80 Mandai Lake Road Singapore 729826</p>
                   </div>
                 </div>
               </div>
-              <div class="footer-copyright text-center py-3 text-white">Copyright © SG Money Lender 2021</div>
-            </footer>
             </div>
+            <div class="footer-copyright text-center py-3 text-white">Copyright © SG Money Lender 2021</div>
+          </div>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
