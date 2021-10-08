@@ -590,6 +590,7 @@ progress {
 .testimonial-container{
   width: 100%;
   height: 300px;
+}
 
 .testimonial-align{
   text-align: center;
@@ -2297,6 +2298,7 @@ progress {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  margin: auto;
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
@@ -7206,6 +7208,10 @@ textarea.form-control-lg {
 
 .text-end {
   text-align: right !important;
+}
+
+.text-start-center{
+  margin: auto;
 }
 
 .text-center {
