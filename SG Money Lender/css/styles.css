@@ -1760,6 +1760,10 @@ fieldset {
 .carousel-dark .carousel-caption {
   color: #000;
 }
+.g-5,
+.gx-5 {
+  --bs-gutter-x: 3rem;
+}
 
 .placeholder {
   display: inline-block;
@@ -2471,6 +2475,10 @@ fieldset {
 @media (min-width: 1200px) {
   .d-xl-block {
     display: block !important;
+  }
+
+  .justify-content-xl-start {
+    justify-content: flex-start !important;
   }
 
   .justify-content-xl-center {
