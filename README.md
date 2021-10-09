@@ -1,7 +1,7 @@
 # SG-Money-Lender
 NTU CS2024 Assignment 2
 
-<u>Requirements</u>
+Requirements:
 Students are required to create a website that contains 3 pages (including the Home Page).
 The goal of the Multi-Page Website assignment will be to guide the students through producing a working multi-page website using the techniques taught during the course.
 
