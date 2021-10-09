@@ -50,27 +50,27 @@
                                 <form id="contactForm">
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name">
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name" required>
                                         <label for="name">Full Name</label>
                                     </div>
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="Enter your contact number">
+                                        <input class="form-control" id="phone" type="tel" placeholder="Enter your contact number" required>
                                         <label for="phone">Contact No.</label>
                                     </div>
                                     <!-- Amount required input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="loanamount" type="number" placeholder="Enter the loan amount">
+                                        <input class="form-control" id="loanamount" type="number" placeholder="Enter the loan amount" required>
                                         <label for="loanamount">Your Amount Required</label>
                                     </div>
                                     <!-- Monthly income input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="monthlyincome" type="number" placeholder="Enter your monthly income">
+                                        <input class="form-control" id="monthlyincome" type="number" placeholder="Enter your monthly income" required>
                                         <label for="monthlyincome">Your Monthly Income</label>
                                     </div>
                                     <!-- Loan Type input-->
                                     <div class="form-floating mb-3">
-                                      <select name="services" class="form-control-select" id="loantype">
+                                      <select name="services" class="form-control-select" id="loantype" required>
                                         <option value="-- Select Loan Type --" hidden>-- Select Loan Type --</option>
                                         <option value="Personal Loan">Personal Loan</option>
                                         <option value="Business Loan">Business Loan</option>
@@ -81,18 +81,6 @@
                                         <option value="Vacation Loan">Vacation Loan</option>
                                         <option value="Renovation Loan">Renovation Loan</option>
                                       </select>
-                                        <!-- <select class="form-control" id="loantype">
-                                          <option value="-- Choose Loan Type -- ">Choose Loan Type</option>
-                                          <option>Personal Loan</option>
-                                          <option>Business Loan</option>
-                                          <option>Foreigner Loan</option>
-                                          <option>Education Loan</option>
-                                          <option>Medical Loan</option>
-                                          <option>Wedding Loan</option>
-                                          <option>Vacation Loan</option>
-                                          <option>Renovation Loan</option>
-                                        </select>
-                                        <label for="loantype">Loan Type</label> -->
                                     </div>
                                     
                                     <!-- Message input-->
@@ -111,13 +99,8 @@
                                             <br />
                                         </div>
                                     </div>
-                                    <!-- Submit error message-->
-                                    <!---->
-                                    <!-- This is what your users will see when there is-->
-                                    <!-- an error submitting the form-->
-                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
                                 </form>
                             </div>
                         </div>
