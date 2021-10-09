@@ -40,38 +40,42 @@
                 <div class="container px-5">
                     <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
                         <div class="text-center mb-5">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-currency-dollar"></i></div>
+                          <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="assets/applyloan.jpg" alt="personal loan" /></div>
                             <h1 class="display-5 fw-bolder mb-3">Apply for a Loan</h1>
                             <p class="lead fw-normal text-muted mb-0">Please kindly provide us with your details so that we can process your loan application online.
                             <br>We will contact you back shortly to arrange for an appointment. </p>
                         </div>
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8 col-xl-6">
-                                <form id="contactForm">
+                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name" required>
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name" data-sb-validations="required" />
                                         <label for="name">Full Name</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">Your name is required.</div>
                                     </div>
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="Enter your contact number" required>
+                                        <input class="form-control" id="phone" type="tel" placeholder="Enter your contact number" data-sb-validations="required" />
                                         <label for="phone">Contact No.</label>
+                                        <div class="invalid-feedback" data-sb-feedback="phone:required">Your contacat no. is required.</div>
                                     </div>
                                     <!-- Amount required input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="loanamount" type="number" placeholder="Enter the loan amount" required>
+                                        <input class="form-control" id="loanamount" type="number" placeholder="Enter the loan amount" data-sb-validations="required" />
                                         <label for="loanamount">Your Amount Required</label>
+                                        <div class="invalid-feedback" data-sb-feedback="loanamount:required">Your loan amount is required.</div>
                                     </div>
                                     <!-- Monthly income input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="monthlyincome" type="number" placeholder="Enter your monthly income" required>
+                                        <input class="form-control" id="monthlyincome" type="number" placeholder="Enter your monthly income" data-sb-validations="required" />
                                         <label for="monthlyincome">Your Monthly Income</label>
+                                        <div class="invalid-feedback" data-sb-feedback="monthlyincome:required">Your monthly income is required.</div>
                                     </div>
                                     <!-- Loan Type input-->
                                     <div class="form-floating mb-3">
-                                      <select name="services" class="form-control-select" id="loantype" required>
-                                        <option value="-- Select Loan Type --" hidden>-- Select Loan Type --</option>
+                                      <select name="services" class="form-control-select" id="loantype" data-sb-validations="required">
+                                        <option value="" hidden>-- Select Loan Type --</option>
                                         <option value="Personal Loan">Personal Loan</option>
                                         <option value="Business Loan">Business Loan</option>
                                         <option value="Foreigner Loan">Foreigner Loan</option>
@@ -81,16 +85,14 @@
                                         <option value="Vacation Loan">Vacation Loan</option>
                                         <option value="Renovation Loan">Renovation Loan</option>
                                       </select>
+                                      <div class="invalid-feedback" data-sb-feedback="loantype:required">Your loan type is required.</div>
                                     </div>
-                                    
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
                                         <textarea class="form-control" id="message" type="text" placeholder="Enter additional message here" style="height: 10rem"></textarea>
                                         <label for="message">Enter additional message here (optional)</label>
                                     </div>
-                                    <!-- Privacy statement-->
-                                    <small id="emailHelp" class="form-text text-muted">Your Privacy and Security, Protected. We take full measures to protect your identity.
-                                      By submitting this form, you agree to be contacted with the information stated above. Your application is 100% confidential.</small><br><br>
+
                                     <!-- Submit success message-->
                                     <div class="d-none" id="submitSuccessMessage">
                                         <div class="text-center mb-3">
@@ -99,8 +101,9 @@
                                             <br />
                                         </div>
                                     </div>
+                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
                                 </form>
                             </div>
                         </div>
@@ -139,8 +142,8 @@
                   <div class="col-md-6 mt-md-0 mt-3 text-white">
                     <h5 class="text-uppercase">About Us</h5><br>
                     <div class="text-white-50">
-                      <p>Founded in 2015, SG Money Lender is committed on building a <br> trustable and reliable relationship with all our customers. Licensed<br>
-                        and highly recognised in Singapore, we ensure that we provide the <br> LOWEST interest rate among all our competitors. With us, your needs <br>
+                      <p>Founded in 2015, SG Money Lender is committed to build a trustable <br> and reliable relationship with our customers. Licensed and
+                        highly <br>recognised in Singapore, we provide the LOWEST interest rate <br> among all our competitors. With us, your needs
                         will always come first.</p>
                     </div>
                   </div>
@@ -169,11 +172,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
