@@ -15,8 +15,5 @@ Reference Website:
 https://www.credit21.com.sg/
 https://apcredit.sg/
 https://ucredit.sg/
-You are to submit a Creative brief with all the 3 links included in your website and a zip file containing the html and assets file
-Please include your team names and contact details.
-Additional Information
-Bootstrap Framework is allowed
-Favicon is required
+
+Additional Information: Bootstrap Framework is allowed, Favicon is required
