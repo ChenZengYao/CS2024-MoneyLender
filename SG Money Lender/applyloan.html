@@ -70,8 +70,19 @@
                                     </div>
                                     <!-- Loan Type input-->
                                     <div class="form-floating mb-3">
-                                        <select class="form-control" id="loantype">
-                                          <option hidden>Choose Loan Type</option>
+                                      <select name="services" class="form-control-select" id="loantype">
+                                        <option value="-- Select Loan Type --" hidden>-- Select Loan Type --</option>
+                                        <option value="Personal Loan">Personal Loan</option>
+                                        <option value="Business Loan">Business Loan</option>
+                                        <option value="Foreigner Loan">Foreigner Loan</option>
+                                        <option value="Education Loan">Education Loan</option>
+                                        <option value="Medical Loan">Medical Loan</option>
+                                        <option value="Wedding Loan">Wedding Loan</option>
+                                        <option value="Vacation Loan">Vacation Loan</option>
+                                        <option value="Renovation Loan">Renovation Loan</option>
+                                      </select>
+                                        <!-- <select class="form-control" id="loantype">
+                                          <option value="-- Choose Loan Type -- ">Choose Loan Type</option>
                                           <option>Personal Loan</option>
                                           <option>Business Loan</option>
                                           <option>Foreigner Loan</option>
@@ -81,7 +92,7 @@
                                           <option>Vacation Loan</option>
                                           <option>Renovation Loan</option>
                                         </select>
-                                        <label for="loantype">Loan Type</label>
+                                        <label for="loantype">Loan Type</label> -->
                                     </div>
                                     
                                     <!-- Message input-->
