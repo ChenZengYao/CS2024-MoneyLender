@@ -1,6 +1,9 @@
 # CS2024 SG-Money-Lender Group Project
 NTU Year 4: Done by 2 person - Marcus & Zeng Yao
 
+# Coding Used
+HTML, CSS, Bootstrap
+
 # Requirements
 Students are required to create a website that contains 3 pages (including the Home Page).
 The goal of the Multi-Page Website assignment will be to guide the students through producing a working multi-page website using the techniques taught during the course.
